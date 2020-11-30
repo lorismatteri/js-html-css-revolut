@@ -1,13 +1,16 @@
 $(function() {
     var menu = $('.to_open');
-
-    menu.each(function () { 
+    var drop = $('.dropdown');
+    var title = $('.nav_right a.to_open');
+    
+    menu.each(function (i, element) {
+        // element == this
         $(this).hover(function () { 
-            $('.nav_right a').css('color', 'black');
-            $('.dropdown').css('opacity', '1');
+            $(title[i]).css('color', 'black');
+            $(drop[i]).css('opacity', '1');
         }, function() {
-            $('.nav_right a').css('color', 'grey');
-            $('.dropdown').css('opacity', '0');
+            $(title[i]).css('color', 'grey');
+            $(drop[i]).css('opacity', '0');
         });
     });
 });
