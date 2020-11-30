@@ -1,3 +1,9 @@
+/* Utility */
+.relative {
+    position: relative;
+}
+/* /Utility */
+
 * {
     margin: 0;
     padding: 0;
@@ -55,4 +61,27 @@ body {
     border: 0;
     padding: 0.9rem;
     border-radius: 2rem;
+}
+
+.dropdown {
+    display: flex;
+    position: absolute;
+    top: 100%;
+    color: grey;
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 2px 2px 2px 2px lightgrey;
+    opacity: 0;
+}
+
+.col {
+    padding: 1rem;
+}
+
+.dropdown ul {
+    list-style: none;
+}
+
+.dropdown ul li {
+    padding: 1rem;
 }
